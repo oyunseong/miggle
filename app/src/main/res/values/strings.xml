@@ -1,9 +1,17 @@
 <resources>
     <string name="app_name">miggle</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
     <string name="login_button">개미굴 로그인</string>
     <string name="board_content"></string>
     <string name="test_comment">회사명</string>
+    <string name="SplashFragment">SplashFragment</string>
+    <string name="HomeTapFragment">HomeTapFragment</string>
+    <string name="ProfileTapFragment">ProfileTapFragment</string>
+    <string name="ValuationTapFragment">ValuationTapFragment</string>
     <string name="kakao_app_key">d777638ad8e4d3afbccc3ee3ec032f63</string>
+    <string name="CommunityTapFragment">CommunityTapFragment</string>
     <integer name="screen_in_time">400</integer>
     <integer name="screen_out_time">400</integer>
     <string name="string_test">증시를 보기에 앞서 대내외 경제 여건을 살펴보면 동반 회복세를 보이던 실물경제와 금융시장이 올해 2분기를 기점으로 차별화됐다. 이에 경기와 자산 간의 괴리 발생에 따른 버블 가능성 경계심이 고조되고 있지만 급격한 조정 가능성은 제한적이라는 조언이 나온다.

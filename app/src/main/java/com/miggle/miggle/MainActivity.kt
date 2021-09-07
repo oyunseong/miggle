@@ -1,35 +1,45 @@
 package com.miggle.miggle
 
 import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationView
-import androidx.appcompat.app.AppCompatActivity
+import android.view.View
+import androidx.navigation.NavController
 import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.miggle.miggle.base.BaseActivity
 import com.miggle.miggle.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityMainBinding
+class MainActivity : BaseActivity<ActivityMainBinding>({ ActivityMainBinding.inflate(it) }) {
+//    private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        initNavigation()
+        /*val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment
+        navController = navHostFragment.findNavController()
+        binding.mainBottomNavigation.setupWithNavController(navController)*/
+    }
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+    private fun initNavigation() {
+        var navController = findNavController(R.id.nav_host)
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment
+        navController = navHostFragment.findNavController()
+        binding.mainBottomNavigation.setupWithNavController(navController)
+        binding.mainBottomNavigation.itemIconTintList = null
 
-        val navView: BottomNavigationView = binding.navView
-
-        val navController = findNavController(R.id.nav_host_fragment_activity_main)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
-            )
-        )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            if (destination.id == R.id.HomeTapFragment ||
+                destination.id == R.id.ValuationTapFragment ||
+                destination.id == R.id.CommunityTapFragment ||
+                destination.id == R.id.ProfileTapFragment
+            ) {
+                binding.mainBottomNavigation.visibility = View.VISIBLE
+            }else{
+                binding.mainBottomNavigation.visibility = View.GONE
+            }
+        }
     }
 }

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/HomeTapFragment">
+
+<!--    <fragment-->
+<!--        android:id="@+id/SplashFragment"-->
+<!--        android:name="com.miggle.miggle.SplashFragment"-->
+<!--        android:label="@string/SplashFragment"-->
+<!--        tools:layout="@layout/fragment_splash"-->
+<!--        />-->
+
+    <fragment
+        android:id="@+id/HomeTapFragment"
+        android:name="com.miggle.miggle.ui.home.HomeTabFragment"
+        android:label="@string/HomeTapFragment"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/ValuationTapFragment"
+        android:name="com.miggle.miggle.ui.valuation.ValuationTabFragment"
+        android:label="@string/ValuationTapFragment"
+        tools:layout="@layout/fragment_valuation"
+        />
+    <fragment
+        android:id="@+id/CommunityTapFragment"
+        android:name="com.miggle.miggle.ui.community.CommunityTapFragment"
+        android:label="@string/CommunityTapFragment"
+        tools:layout="@layout/fragment_community"
+        />
+    <fragment
+        android:id="@+id/ProfileTapFragment"
+        android:name="com.miggle.miggle.ui.profile.ProfileTapFragment"
+        android:label="@string/ProfileTapFragment"
+        tools:layout="@layout/fragment_profile_tab"
+        />
+
+</navigation>
