@@ -40,5 +40,11 @@
         android:name="com.miggle.miggle.ui.community.SearchFragment"
         android:label="@string/SearchFragment"
         tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/PostFragment"
+        android:name="com.miggle.miggle.ui.community.PostFragment"
+        android:label="@string/HomeTapFragment"
+        tools:layout="@layout/fragment_post"
+        />
 
 </navigation>

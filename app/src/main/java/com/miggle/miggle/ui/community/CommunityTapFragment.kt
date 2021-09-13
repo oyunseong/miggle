@@ -1,6 +1,8 @@
 package com.miggle.miggle.ui.community
 
+import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.miggle.miggle.R
@@ -12,6 +14,7 @@ class CommunityTapFragment : BaseFragment<FragmentCommunityBinding>() {
         inflater: LayoutInflater,
         container: ViewGroup?
     ): FragmentCommunityBinding {
+
         return FragmentCommunityBinding.inflate(inflater, container, false)
     }
 

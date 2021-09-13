@@ -40,6 +40,7 @@ abstract class BaseFragment<B : ViewBinding> : Fragment() {
         Log.d(tag1, "++onCreate")
     }
 
+
     override fun onDestroyView() {
         super.onDestroyView()
         Log.d(tag1, "++onDestroyView")

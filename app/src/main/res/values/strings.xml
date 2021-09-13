@@ -8,6 +8,7 @@
     <string name="test_comment">회사명</string>
     <string name="SplashFragment">SplashFragment</string>
     <string name="HomeTapFragment">HomeTapFragment</string>
+    <string name="PostFragment">PostFragment</string>
     <string name="SearchFragment">SearchFragment</string>
     <string name="ProfileTapFragment">ProfileTapFragment</string>
     <string name="ValuationTapFragment">ValuationTapFragment</string>

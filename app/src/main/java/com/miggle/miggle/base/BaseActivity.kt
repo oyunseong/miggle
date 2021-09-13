@@ -34,6 +34,8 @@ abstract class BaseActivity<B: ViewBinding>(val bindingFactory: (LayoutInflater)
         Log.d(tag, "++onStart")
     }
 
+
+
     override fun onResume() {
         super.onResume()
         Log.d(tag, "++onResume")
