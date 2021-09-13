@@ -8,6 +8,7 @@
     <string name="test_comment">회사명</string>
     <string name="SplashFragment">SplashFragment</string>
     <string name="HomeTapFragment">HomeTapFragment</string>
+    <string name="SearchFragment">SearchFragment</string>
     <string name="ProfileTapFragment">ProfileTapFragment</string>
     <string name="ValuationTapFragment">ValuationTapFragment</string>
     <string name="kakao_app_key">d777638ad8e4d3afbccc3ee3ec032f63</string>

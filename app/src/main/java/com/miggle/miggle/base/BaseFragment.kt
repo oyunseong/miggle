@@ -13,33 +13,42 @@ import androidx.viewbinding.ViewBinding
 abstract class BaseFragment<B : ViewBinding> : Fragment() {
     private var _binding: B? = null
     val binding get() = _binding!!
+    private val tag1: String = this::class.java.name
+
+    abstract fun initClickListener()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        Log.d(tag, "++onCreateView")
+        Log.d(tag1, "++onCreateView")
         _binding = getFragmentBinding(inflater, container)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        Log.d(tag1, "++onViewCreated")
+        initClickListener()
     }
 
     abstract fun getFragmentBinding(inflater: LayoutInflater, container: ViewGroup?): B
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d(tag, "++onCreate")
+        Log.d(tag1, "++onCreate")
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        Log.d(tag, "++onDestroyView")
+        Log.d(tag1, "++onDestroyView")
         _binding = null
     }
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        Log.d(tag, "++onAttach")
+        Log.d(tag1, "++onAttach")
     }
 
 
@@ -49,33 +58,33 @@ abstract class BaseFragment<B : ViewBinding> : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        Log.d(tag, "++onStart")
+        Log.d(tag1, "++onStart")
     }
 
 
     override fun onResume() {
         super.onResume()
-        Log.d(tag, "++onResume")
+        Log.d(tag1, "++onResume")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d(tag, "++onPause")
+        Log.d(tag1, "++onPause")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d(tag, "++onStop")
+        Log.d(tag1, "++onStop")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d(tag, "++onDestroy")
+        Log.d(tag1, "++onDestroy")
     }
 
     override fun onDetach() {
         super.onDetach()
-        Log.d(tag, "++onDetach")
+        Log.d(tag1, "++onDetach")
     }
 
 

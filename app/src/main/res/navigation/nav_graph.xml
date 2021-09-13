@@ -5,12 +5,12 @@
     android:id="@+id/nav_graph"
     app:startDestination="@+id/HomeTapFragment">
 
-<!--    <fragment-->
-<!--        android:id="@+id/SplashFragment"-->
-<!--        android:name="com.miggle.miggle.SplashFragment"-->
-<!--        android:label="@string/SplashFragment"-->
-<!--        tools:layout="@layout/fragment_splash"-->
-<!--        />-->
+    <!--    <fragment-->
+    <!--        android:id="@+id/SplashFragment"-->
+    <!--        android:name="com.miggle.miggle.SplashFragment"-->
+    <!--        android:label="@string/SplashFragment"-->
+    <!--        tools:layout="@layout/fragment_splash"-->
+    <!--        />-->
 
     <fragment
         android:id="@+id/HomeTapFragment"
@@ -21,19 +21,24 @@
         android:id="@+id/ValuationTapFragment"
         android:name="com.miggle.miggle.ui.valuation.ValuationTabFragment"
         android:label="@string/ValuationTapFragment"
-        tools:layout="@layout/fragment_valuation"
-        />
+        tools:layout="@layout/fragment_valuation" />
+
     <fragment
         android:id="@+id/CommunityTapFragment"
         android:name="com.miggle.miggle.ui.community.CommunityTapFragment"
         android:label="@string/CommunityTapFragment"
-        tools:layout="@layout/fragment_community"
-        />
+        tools:layout="@layout/fragment_community">
+    </fragment>
+
     <fragment
         android:id="@+id/ProfileTapFragment"
         android:name="com.miggle.miggle.ui.profile.ProfileTapFragment"
         android:label="@string/ProfileTapFragment"
-        tools:layout="@layout/fragment_profile_tab"
-        />
+        tools:layout="@layout/fragment_profile_tab" />
+    <fragment
+        android:id="@+id/SearchFragment"
+        android:name="com.miggle.miggle.ui.community.SearchFragment"
+        android:label="@string/SearchFragment"
+        tools:layout="@layout/fragment_search" />
 
 </navigation>

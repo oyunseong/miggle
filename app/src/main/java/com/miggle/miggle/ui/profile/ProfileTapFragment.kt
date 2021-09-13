@@ -12,4 +12,8 @@ class ProfileTapFragment : BaseFragment<FragmentProfileTabBinding>() {
     ): FragmentProfileTabBinding {
         return FragmentProfileTabBinding.inflate(inflater,container,false)
     }
+
+    override fun initClickListener() {
+
+    }
 }

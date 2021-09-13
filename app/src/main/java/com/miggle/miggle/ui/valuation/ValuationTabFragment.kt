@@ -12,4 +12,8 @@ class ValuationTabFragment : BaseFragment<FragmentValuationBinding>() {
     ): FragmentValuationBinding {
         return FragmentValuationBinding.inflate(inflater,container,false)
     }
+
+    override fun initClickListener() {
+
+    }
 }
