@@ -1,4 +1,7 @@
 package com.miggle.miggle.model
 
-class Post {
+class Post (
+    var category: String?=null,
+
+        ){
 }
