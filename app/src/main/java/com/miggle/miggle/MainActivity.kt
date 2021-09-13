@@ -11,8 +11,6 @@ import com.miggle.miggle.base.BaseActivity
 import com.miggle.miggle.databinding.ActivityMainBinding
 
 class MainActivity : BaseActivity<ActivityMainBinding>({ ActivityMainBinding.inflate(it) }) {
-//    private lateinit var navController: NavController
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         initNavigation()
@@ -23,10 +21,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>({ ActivityMainBinding.inf
     }
 
     private fun initNavigation() {
-        var navController = findNavController(R.id.nav_host)
-        val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment
-        navController = navHostFragment.findNavController()
+        var navController = findNavController(R.id.main_nav_host)
         binding.mainBottomNavigation.setupWithNavController(navController)
         binding.mainBottomNavigation.itemIconTintList = null
 
