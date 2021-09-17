@@ -11,7 +11,8 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>({ ActivitySplashBindi
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Handler().postDelayed({
-            startActivity(Intent(this,MainActivity::class.java))
+//            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this,TestActivity::class.java))
             finish()
         },800)
 
