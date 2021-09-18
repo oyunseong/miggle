@@ -14,13 +14,12 @@ import com.miggle.miggle.server.CallRetrofit
 
 class TestActivity : BaseActivity<ActivityTestBinding>({ ActivityTestBinding.inflate(it) }) {
     private var callRetrofit = CallRetrofit()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding.testButton.setOnClickListener {
-            showToast("버튼 클릭")
-            binding.testId.text
-//            callRetrofit.callPhoneAlreadyCheck("01066952442")
-
+            val bottomSheetFragment = BottomSheetFragment()
+            bottomSheetFragment.show(supportFragmentManager,bottomSheetFragment.tag)
         }
 
     }

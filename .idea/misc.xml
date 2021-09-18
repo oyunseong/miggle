@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/bottom_sheet_dialog_login_check.xml" value="0.1" />
+        <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/custom_dialog.xml" value="0.1984375" />
+        <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/dialog_login_check.xml" value="0.40298507462686567" />
+        <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/dialog_progress.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

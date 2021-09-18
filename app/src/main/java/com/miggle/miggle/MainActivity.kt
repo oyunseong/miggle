@@ -15,7 +15,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>({ ActivityMainBinding.inf
         super.onCreate(savedInstanceState)
         initNavigation()
         /*val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment
+            sudpportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment
         navController = navHostFragment.findNavController()
         binding.mainBottomNavigation.setupWithNavController(navController)*///
     }
