@@ -13,7 +13,7 @@ import androidx.viewbinding.ViewBinding
 abstract class BaseFragment<B : ViewBinding> : Fragment() {
     private var _binding: B? = null
     val binding get() = _binding!!
-    private val tag1: String = this::class.java.name
+    public val tag1: String = this::class.java.name
 
     abstract fun initClickListener()
 

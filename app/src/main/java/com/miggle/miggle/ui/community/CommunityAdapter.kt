@@ -12,9 +12,9 @@ import com.miggle.miggle.ui.community.holder.NewsHolder
 import com.miggle.miggle.ui.community.holder.PostHolder
 import com.miggle.miggle.ui.community.holder.SearchHolder
 
-class CommunityAdapter(postList: ArrayList<Post>?, postCase: PostCase) :
+class CommunityAdapter(postResponseList: List<Post>?, postCase: PostCase) :
     RecyclerView.Adapter<CommunityHolder>() {
-    private var postList: ArrayList<Post>? = null
+    private var postResponseList: List<Post>? = null
     private val postCase: PostCase
     var itemClickListener: OnItemClickListener? = null
 
@@ -53,23 +53,23 @@ class CommunityAdapter(postList: ArrayList<Post>?, postCase: PostCase) :
     override fun onBindViewHolder(holder: CommunityHolder, position: Int) {
         when (holder) {
             is NewsHolder -> {
-                holder.onBind(postList!![position])
+                holder.onBind(postResponseList!![position])
             }
             is PostHolder -> {
-                holder.onBind(postList!![position])
+                holder.onBind(postResponseList!![position])
             }
             is SearchHolder -> {
-                holder.onBind(postList!![position])
+                holder.onBind(postResponseList!![position])
             }
         }
     }
 
     override fun getItemCount(): Int {
-        return postList!!.size
+        return postResponseList!!.size
     }
 
     init {
-        this.postList = postList
+        this.postResponseList = postResponseList
         this.postCase = postCase
     }
 }

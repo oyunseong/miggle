@@ -19,7 +19,7 @@ class PostHolder(
                 itemClickListener?.onItemClick(v, pos)
             }
         }
-        itemPostRecyclerBinding.itemPostTitle.text = post.category
+        itemPostRecyclerBinding.itemPostTitle.text = post.title
 //        itemPostRecyclerBinding.itemPostContent.text = post.content
 //        itemPostRecyclerBinding.itemPostNickname.text = post.writerNickname
 //        itemPostRecyclerBinding.itemPostTime.text = post.createAt

@@ -10,6 +10,8 @@
     <string name="HomeTapFragment">HomeTapFragment</string>
     <string name="PostFragment">PostFragment</string>
     <string name="SearchFragment">SearchFragment</string>
+    <string name="send_to_complete">전송 완료되었습니다.</string>
+    <string name="close">닫기</string>
     <string name="ProfileTapFragment">ProfileTapFragment</string>
     <string name="ValuationTapFragment">ValuationTapFragment</string>
     <string name="kakao_app_key">d777638ad8e4d3afbccc3ee3ec032f63</string>

@@ -11,23 +11,11 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>({ ActivitySplashBindi
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Handler().postDelayed({
-//            startActivity(Intent(this,MainActivity::class.java))
-            startActivity(Intent(this,TestActivity::class.java))
+            startActivity(Intent(this,MainActivity::class.java))
+            // 테스트를 위한 Activity
+//            startActivity(Intent(this, TestActivity::class.java))
             finish()
-        },800)
+        }, 800)
 
     }
-
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//        super.onViewCreated(view, savedInstanceState)
-//
-//        Handler(Looper.getMainLooper()).postDelayed({
-//            // TODO 메인 프래그먼트 호출
-////            findNavController().navigate(R.id.HomeTapFragment)
-//
-//        },800)
-    }
-//    private fun isOnBoardingFinished() : Boolean{
-//        val prefs = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
-//        return prefs.getBoolean("finished",false)
-//    }
+}
