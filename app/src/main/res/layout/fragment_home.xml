@@ -6,7 +6,7 @@
     android:background="@color/fragment_background">
 
     <include
-        android:id="@+id/home_include"
+        android:id="@+id/home_appbar"
         layout="@layout/appbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -15,14 +15,14 @@
         android:id="@+id/guide_card"
         android:layout_width="match_parent"
         android:layout_height="110dp"
-        android:layout_marginHorizontal="24dp"
+        android:layout_marginHorizontal="15dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="20dp"
         app:cardElevation="3.3dp"
         app:layout_constraintBottom_toTopOf="@id/ranking_card"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/home_include">
+        app:layout_constraintTop_toBottomOf="@id/home_appbar">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/guide_constraint"
@@ -32,35 +32,38 @@
 
             <TextView
                 android:id="@+id/guide_title"
+                style="@style/Text.WhiteFont"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="23dp"
                 android:layout_marginTop="29dp"
-                android:letterSpacing="-0.04"
                 android:text="개미굴 사용 가이드"
-                android:textColor="@color/white"
                 android:textSize="16.7sp"
-                android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="@id/guide_constraint"
                 app:layout_constraintTop_toTopOf="@id/guide_constraint" />
 
             <TextView
                 android:id="@+id/guide_sub_title"
+                style="@style/Text.WhiteFont"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="7dp"
                 android:background="@drawable/home_guide_card_in_round"
                 android:gravity="center"
-                android:letterSpacing="-0.04"
                 android:paddingHorizontal="20dp"
                 android:paddingVertical="3dp"
                 android:text="사용법 알아보기"
-                android:textColor="@color/white"
-                android:textSize="13.3sp"
-                android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="@id/guide_constraint"
                 app:layout_constraintTop_toBottomOf="@id/guide_title" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/carrot"
+                app:layout_constraintBottom_toBottomOf="@id/guide_constraint"
+                app:layout_constraintRight_toRightOf="@id/guide_constraint"
+                app:layout_constraintTop_toTopOf="@id/guide_constraint" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
@@ -68,7 +71,7 @@
         android:id="@+id/ranking_card"
         android:layout_width="match_parent"
         android:layout_height="142dp"
-        android:layout_marginHorizontal="24dp"
+        android:layout_marginHorizontal="15dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="20dp"
         app:cardElevation="3.3dp"
@@ -127,8 +130,8 @@
         android:id="@+id/calculator_card"
         android:layout_width="0dp"
         android:layout_height="171.2dp"
-        android:layout_marginStart="25.2dp"
-        android:layout_marginEnd="9dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="5dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="20dp"
         app:cardElevation="3.3dp"
@@ -168,8 +171,8 @@
         android:id="@+id/report_card"
         android:layout_width="0dp"
         android:layout_height="171.2dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="15dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="20dp"
         app:cardElevation="3.3dp"

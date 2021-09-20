@@ -18,6 +18,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>({ ActivityMainBinding.inf
             sudpportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment
         navController = navHostFragment.findNavController()
         binding.mainBottomNavigation.setupWithNavController(navController)*///
+
     }
 
     private fun initNavigation() {

@@ -40,6 +40,9 @@ class CommunityTapFragment : BaseFragment<FragmentCommunityBinding>() {
         binding.communityAppbar.appbarSearchButton.setOnClickListener {
             view?.findNavController()?.navigate(R.id.SearchFragment)
         }
+        binding.communityAppbar.appbarBellButton.setOnClickListener {
+            view?.findNavController()?.navigate(R.id.NotionFragment)
+        }
         binding.stockInfoButton.setOnClickListener{
             communityAdapter.notifyDataSetChanged()
         }
@@ -48,6 +51,8 @@ class CommunityTapFragment : BaseFragment<FragmentCommunityBinding>() {
     @SuppressLint("NotifyDataSetChanged")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.communityAppbar.appbarSettingButton.visibility = View.INVISIBLE
+
         dataList = mutableListOf()
         communityAdapter = CommunityAdapter(dataList, PostCase.STOCK_INFO)
         val layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(layoutInflater.context)

@@ -7,7 +7,9 @@
     <string name="board_content"></string>
     <string name="test_comment">회사명</string>
     <string name="SplashFragment">SplashFragment</string>
-    <string name="HomeTapFragment">HomeTapFragment</string>
+    <string name="HomeTapFragment">HomeTapFragment</string>>
+    <string name="NotionFragment">NotionFragment</string>
+    <string name="PreferencesFragment">PreferencesFragment</string>
     <string name="PostFragment">PostFragment</string>
     <string name="SearchFragment">SearchFragment</string>
     <string name="send_to_complete">전송 완료되었습니다.</string>
