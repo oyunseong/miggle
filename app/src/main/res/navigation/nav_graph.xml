@@ -5,13 +5,6 @@
     android:id="@+id/nav_graph"
     app:startDestination="@+id/HomeTapFragment">
 
-    <!--    <fragment-->
-    <!--        android:id="@+id/SplashFragment"-->
-    <!--        android:name="com.miggle.miggle.SplashFragment"-->
-    <!--        android:label="@string/SplashFragment"-->
-    <!--        tools:layout="@layout/fragment_splash"-->
-    <!--        />-->
-
     <fragment
         android:id="@+id/HomeTapFragment"
         android:name="com.miggle.miggle.ui.home.HomeTabFragment"

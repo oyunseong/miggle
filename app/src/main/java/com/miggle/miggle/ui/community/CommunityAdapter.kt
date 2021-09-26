@@ -11,11 +11,11 @@ import com.miggle.miggle.ui.community.holder.CommunityHolder
 import com.miggle.miggle.ui.community.holder.NewsHolder
 import com.miggle.miggle.ui.community.holder.PostHolder
 import com.miggle.miggle.ui.community.holder.SearchHolder
+import java.lang.Exception
 
-class CommunityAdapter(postResponseList: List<Post>?, postCase: PostCase) :
+class CommunityAdapter(private val postCase: PostCase) :
     RecyclerView.Adapter<CommunityHolder>() {
-    private var postResponseList: List<Post>? = null
-    private val postCase: PostCase
+    private var postList: List<Post>? = emptyList()
     var itemClickListener: OnItemClickListener? = null
 
     interface OnItemClickListener {
@@ -24,6 +24,12 @@ class CommunityAdapter(postResponseList: List<Post>?, postCase: PostCase) :
 
     fun setOnItemClickListener(itemClickListener: OnItemClickListener?) {
         this.itemClickListener = itemClickListener
+    }
+
+//TODO diff util 변경된 데이터만 갱신 ( 검색! )
+    fun submitList(postList: List<Post>?) {
+        this.postList = postList
+        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CommunityHolder {
@@ -46,30 +52,25 @@ class CommunityAdapter(postResponseList: List<Post>?, postCase: PostCase) :
                     itemClickListener
                 )
             }
-//            else -> return null
         }
     }
 
     override fun onBindViewHolder(holder: CommunityHolder, position: Int) {
         when (holder) {
             is NewsHolder -> {
-                holder.onBind(postResponseList!![position])
+                holder.onBind(postList!![position])
             }
             is PostHolder -> {
-                holder.onBind(postResponseList!![position])
+                holder.onBind(postList!![position])
             }
             is SearchHolder -> {
-                holder.onBind(postResponseList!![position])
+                holder.onBind(postList!![position])
             }
         }
     }
 
     override fun getItemCount(): Int {
-        return postResponseList!!.size
+        return postList!!.size
     }
 
-    init {
-        this.postResponseList = postResponseList
-        this.postCase = postCase
-    }
 }

@@ -1,12 +1,6 @@
 package com.miggle.miggle.server;
 
 public class Model__CheckAlready {
-
-//    {
-//        "phone": "01012345678",
-//        "message": "can use number"
-//    }
-
     private boolean isRight = false;
     private String id;
     private String password;

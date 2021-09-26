@@ -11,16 +11,23 @@ class CommunityViewModel : ViewModel() {
 
     val singlePost: MutableLiveData<Post> = MutableLiveData()
     val postList: MutableLiveData<List<Post>> = MutableLiveData()
+    val userList: MutableLiveData<List<User>> = MutableLiveData()
 
     fun getPost() {
         viewModelScope.launch {
-            singlePost.value = PostNetwork.retrofit.getPost()
+            singlePost.value = PostNetwork.retrofit.getPost() // new Post(1,2,3,4)
         }
     }
 
     fun getPosts() {
         viewModelScope.launch {
             postList.value = PostNetwork.retrofit.getPosts()
+        }
+    }
+
+    fun getUsers() {
+        viewModelScope.launch {
+//            postList.value = PostNetwork.retrofit.getUsers()
         }
     }
 }

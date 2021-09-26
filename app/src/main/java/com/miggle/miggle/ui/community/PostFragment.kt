@@ -26,7 +26,7 @@ class PostFragment : BaseFragment<FragmentPostBinding>(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         postList = ArrayList()
-        mAdapter = CommunityAdapter(postList, PostCase.STOCK_INFO)
+        mAdapter = CommunityAdapter( PostCase.STOCK_INFO)
         val layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(layoutInflater.context)
         binding!!.postRecycler.layoutManager = layoutManager
 //        binding!!.postRecycler.addItemDecoration(RecyclerDecorationHeight(3))

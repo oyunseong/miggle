@@ -4,12 +4,9 @@ import android.content.Context
 import android.util.TypedValue
 import android.view.View
 import android.view.ViewGroup
-import android.view.Window
-import android.view.WindowManager
-import com.miggle.miggle.MessageDialog
 
 /**
- * 코틀린 학장함수
+ * 코틀린 확장함수
  */
 fun View.setMargin(left: Float? = null, top: Float? = null, right: Float? = null, bottom: Float? = null) {
     layoutParams<ViewGroup.MarginLayoutParams> {
@@ -19,7 +16,6 @@ fun View.setMargin(left: Float? = null, top: Float? = null, right: Float? = null
         bottom?.run { bottomMargin = dpToPx(this) }
     }
 }
-
 
 inline fun <reified T : ViewGroup.LayoutParams> View.layoutParams(block: T.() -> Unit) {
     if (layoutParams is T) block(layoutParams as T)

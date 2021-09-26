@@ -15,13 +15,16 @@
         <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/drawable/shape_round_11dp_aaa_1dp.xml" value="0.11018518518518519" />
         <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/drawable/shape_round_2e4887_1dp.xml" value="0.11018518518518519" />
         <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/drawable/shape_round_3_1dp.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/activity_splash.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/appbar.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/bottom_sheet_dialog_login_check.xml" value="0.1" />
         <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/custom_dialog.xml" value="0.5" />
         <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/dialog_login_check.xml" value="0.40298507462686567" />
         <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/dialog_message.xml" value="0.33" />
         <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/dialog_progress.xml" value="0.1" />
-        <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/fragment_community.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/fragment_community.xml" value="0.33" />
+        <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/fragment_dashboard.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/fragment_detail_board.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/fragment_home.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/fragment_notifications.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/fragment_notion.xml" value="0.36614583333333334" />
@@ -29,7 +32,10 @@
         <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/fragment_preferences.xml" value="0.2640625" />
         <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/fragment_profile_tab.xml" value="0.67" />
         <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/fragment_search.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/item_indicator_recycler.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/item_like_stock.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/item_post_recycler.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/layout/item_post_recycler_unused.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/yun/AndroidStudioProjects/miggle/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36614583333333334" />
       </map>
     </option>
