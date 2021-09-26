@@ -50,7 +50,7 @@ class CommunityTapFragment : BaseFragment<FragmentCommunityBinding>() {
             communityAdapter.notifyDataSetChanged()
         }
         binding.freeboardButton.setOnClickListener{
-            showToast("자유게시판 버튼 클릭")
+            showToast("자유게시판 버튼 클릭")    // 클릭
             communityAdapter = CommunityAdapter(PostCase.FREE_BOARD)
             communityAdapter.notifyDataSetChanged()
         }
