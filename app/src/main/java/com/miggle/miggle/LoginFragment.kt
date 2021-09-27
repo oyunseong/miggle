@@ -24,6 +24,13 @@ class LoginFragment :BaseFragment<FragmentLoginBinding>(){
         binding.loginSignup.setOnClickListener{
             view?.findNavController()?.navigate(R.id.SignUpFragment)
         }
+        binding.googleButton.setOnClickListener {
+            val dialog = MessageDialog(
+                context = activity ?: return@setOnClickListener,
+                title = R.string.comming_soon
+            )
+            dialog.show()
+        }
     }
 
     override fun getFragmentBinding(

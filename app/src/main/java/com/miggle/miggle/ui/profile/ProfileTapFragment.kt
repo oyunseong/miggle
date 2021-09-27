@@ -29,9 +29,6 @@ class ProfileTapFragment : BaseFragment<FragmentProfileTabBinding>() {
         binding.myPageAppbar.appbarSettingButton.setOnClickListener {
             view?.findNavController()?.navigate(R.id.PreferencesFragment)
         }
-        binding.profileTapMyInfoCard.setOnClickListener {
-            view?.findNavController()?.navigate(R.id.ProfileEditFragment)
-        }
         binding.profileTapLikeStockCard.setOnClickListener {
             val dialog = MessageDialog(
                 context = activity ?: return@setOnClickListener,
