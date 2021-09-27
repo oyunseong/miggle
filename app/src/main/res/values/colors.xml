@@ -9,8 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="main_color">#2e4887</color>
     <color name="hint_color">#38333333</color>
+    <color name="appbar_icon_color">#dedede</color>
     <color name="fragment_background">#f9f9f9</color>
     <color name="not_selected_color">#CACACA</color>
     <color name="main_color_15p">#262e4887</color>
+    <color name="guide_card_color">#fef3ff</color>
 
 </resources>

@@ -29,6 +29,12 @@
         android:label="@string/ProfileTapFragment"
         tools:layout="@layout/fragment_profile_tab" />
     <fragment
+        android:id="@+id/PreferencesFragment"
+        android:name="com.miggle.miggle.ui.profile.PreferencesFragment"
+        android:label="@string/PreferencesFragment"
+        tools:layout="@layout/fragment_preferences"
+        />
+    <fragment
         android:id="@+id/SearchFragment"
         android:name="com.miggle.miggle.ui.community.SearchFragment"
         android:label="@string/SearchFragment"
@@ -46,10 +52,44 @@
         tools:layout="@layout/fragment_notion"
         />
     <fragment
-        android:id="@+id/PreferencesFragment"
-        android:name="com.miggle.miggle.ui.profile.PreferencesFragment"
-        android:label="@string/PreferencesFragment"
-        tools:layout="@layout/fragment_preferences"
+        android:id="@+id/SearchPasswordFragment"
+        android:name="com.miggle.miggle.ui.profile.SearchPasswordFragment"
+        android:label="@string/SearchPasswordFragment"
+        tools:layout="@layout/fragment_search_password"
         />
+
+    <fragment
+        android:id="@+id/ProfileEditFragment"
+        android:name="com.miggle.miggle.ui.profile.ProfileEditFragment"
+        android:label="@string/ProfileEditFragment"
+        tools:layout="@layout/fragment_profile_edit"
+        />
+    <fragment
+        android:id="@+id/DailyReportFragment"
+        android:name="com.miggle.miggle.ui.home.DailyReportFragment"
+        android:label="@string/PreferencesFragment"
+        tools:layout="@layout/fragment_daily_report"
+        />
+
+    <fragment
+        android:id="@+id/GuidanceFragment"
+        android:name="com.miggle.miggle.ui.home.GuidanceFragment"
+        android:label="@string/GuidanceFragment"
+        tools:layout="@layout/fragment_guidance"
+        />
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.miggle.miggle.LoginFragment"
+        android:label="@string/LoginFragment"
+        tools:layout="@layout/fragment_login"
+        />
+    <fragment
+        android:id="@+id/SignUpFragment"
+        android:name="com.miggle.miggle.SignUpFragment"
+        android:label="@string/SignUpFragment"
+        tools:layout="@layout/fragment_sign_up"
+        />
+
 
 </navigation>

@@ -40,7 +40,7 @@ class MessageDialog(
         binding.messageDialogButtonText.text = getContext().getString(buttonText)
 
         binding.messageDialogButton.setOnClickListener {
-            Toast.makeText(context, "cancel button", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(context, "cancel button", Toast.LENGTH_SHORT).show()
             dismiss()
         }
     }

@@ -17,10 +17,7 @@
             android:name=".MainActivity"
             android:label="@string/app_name">
         </activity>
-        <activity
-            android:name=".TestActivity"
-            android:label="@string/app_name">
-        </activity>
+
         <activity
             android:name=".SplashActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">

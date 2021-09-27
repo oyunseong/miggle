@@ -12,7 +12,6 @@ import retrofit2.converter.gson.GsonConverterFactory
  * 임시 데이터 :"https://jsonplaceholder.typicode.com"
  */
 object PostNetwork {
-
     val retrofit by lazy {
         Retrofit.Builder()
                 .baseUrl("https://jsonplaceholder.typicode.com")
@@ -20,5 +19,4 @@ object PostNetwork {
                 .build()
                 .create(PostAPI::class.java)
     }
-
 }

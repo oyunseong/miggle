@@ -7,7 +7,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
-    private static final String BASE_URL = "https://www.developer-hyun.com/app/users";
+    private static final String BASE_URL = "https://jsonplaceholder.typicode.com";
 
     public static RetrofitAPI getApiService(){return getInstance().create(RetrofitAPI.class);}
 

@@ -25,7 +25,6 @@ class CommunityTapFragment : BaseFragment<FragmentCommunityBinding>() {
         ViewModelProvider(this).get(CommunityViewModel::class.java)
     }
 
-
     val TAG = "TAG1"
     override fun getFragmentBinding(
         inflater: LayoutInflater,
@@ -44,7 +43,7 @@ class CommunityTapFragment : BaseFragment<FragmentCommunityBinding>() {
         binding.stockInfoButton.setOnClickListener{
             communityAdapter.notifyDataSetChanged()
         }
-        binding.stockInfoButton.setOnClickListener{
+        /*binding.stockInfoButton.setOnClickListener{
             showToast("종목버튼 클릭")
             communityAdapter = CommunityAdapter(PostCase.STOCK_INFO)
             communityAdapter.notifyDataSetChanged()
@@ -53,7 +52,7 @@ class CommunityTapFragment : BaseFragment<FragmentCommunityBinding>() {
             showToast("자유게시판 버튼 클릭")    // 클릭
             communityAdapter = CommunityAdapter(PostCase.FREE_BOARD)
             communityAdapter.notifyDataSetChanged()
-        }
+        }*/
     }
 
     @SuppressLint("NotifyDataSetChanged")
@@ -68,22 +67,20 @@ class CommunityTapFragment : BaseFragment<FragmentCommunityBinding>() {
         binding.communityRecycler.setHasFixedSize(true)
 
         viewModel.getPost() //
-        viewModel.getPosts() //
 //        viewModel.getPosts2() // 불러오기
 //        viewModel.getUsers()
         viewModel.singlePost.observe(viewLifecycleOwner, Observer {
             Log.d("single post", it.title)
         })
 
+        viewModel.getPosts() //
         viewModel.postList.observe(viewLifecycleOwner, Observer {
-
             communityAdapter.submitList(it)
 
             for (post in it) {
                 Log.d(TAG, post.id.toString())
                 Log.d(TAG, post.userId.toString())
             }
-
         })
     }
 }

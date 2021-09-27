@@ -29,12 +29,28 @@ class ProfileTapFragment : BaseFragment<FragmentProfileTabBinding>() {
         binding.myPageAppbar.appbarSettingButton.setOnClickListener {
             view?.findNavController()?.navigate(R.id.PreferencesFragment)
         }
-
+        binding.profileTapMyInfoCard.setOnClickListener {
+            view?.findNavController()?.navigate(R.id.ProfileEditFragment)
+        }
+        binding.profileTapLikeStockCard.setOnClickListener {
+            val dialog = MessageDialog(
+                context = activity ?: return@setOnClickListener,
+                title = R.string.comming_soon
+            )
+            dialog.show()
+        }
         binding.myPageNotionConstraint.setOnClickListener {
             Log.d(tag1, "++notion button click")
             val dialog = MessageDialog(
                 context = activity ?: return@setOnClickListener,
-                title = R.string.send_to_complete
+                title = R.string.comming_soon
+            )
+            dialog.show()
+        }
+        binding.profileTapNotionSettingCard.setOnClickListener {
+            val dialog = MessageDialog(
+                context = activity ?: return@setOnClickListener,
+                title = R.string.comming_soon
             )
             dialog.show()
         }

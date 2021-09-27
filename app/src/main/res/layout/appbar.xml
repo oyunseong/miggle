@@ -12,6 +12,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/appbar_main_logo"
         android:layout_width="60dp"
         android:layout_height="20dp"
         android:background="@drawable/ic_miggle_logo"
@@ -25,7 +26,7 @@
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:background="@drawable/ic_search"
-        android:backgroundTint="@color/main_color"
+        android:backgroundTint="@color/appbar_icon_color"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginRight="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,7 +38,7 @@
         android:layout_height="26dp"
         android:layout_marginEnd="15dp"
         android:background="@drawable/ic_setting"
-        android:backgroundTint="@color/main_color"
+        android:backgroundTint="@color/appbar_icon_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -48,7 +49,7 @@
         android:layout_height="25dp"
         android:layout_marginEnd="15dp"
         android:background="@drawable/ic_bell"
-        android:backgroundTint="@color/main_color"
+        android:backgroundTint="@color/appbar_icon_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

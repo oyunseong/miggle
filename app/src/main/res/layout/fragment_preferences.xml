@@ -62,7 +62,7 @@
 
             <TextView
                 android:id="@+id/my_page_info_setting"
-                style="@style/Text.MainColorFont"
+                style="@style/Text.BlackFont"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="개인정보 설정"
@@ -71,38 +71,6 @@
                 app:layout_constraintRight_toRightOf="@id/preferences_info_setting_constraint"
                 app:layout_constraintTop_toTopOf="@id/preferences_info_setting_constraint" />
 
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/preferences_notion_card"
-        android:layout_width="311.3dp"
-        android:layout_height="31.7dp"
-        android:layout_marginTop="16.9dp"
-        app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="15dp"
-        app:cardElevation="2dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/preferences_myInfo_card">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/preferences_notion_constraint"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white">
-
-            <TextView
-                style="@style/Text.MainColorFont"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="알람설정"
-                app:layout_constraintBottom_toBottomOf="@id/preferences_notion_constraint"
-                app:layout_constraintLeft_toLeftOf="@id/preferences_notion_constraint"
-                app:layout_constraintRight_toRightOf="@id/preferences_notion_constraint"
-                app:layout_constraintTop_toTopOf="@id/preferences_notion_constraint" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -118,7 +86,7 @@
         app:cardElevation="2dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/preferences_notion_card">
+        app:layout_constraintTop_toBottomOf="@id/preferences_myInfo_card">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/preferences_marketing_constraint"
@@ -127,7 +95,7 @@
             android:background="@color/white">
 
             <TextView
-                style="@style/Text.MainColorFont"
+                style="@style/Text.BlackFont"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="마케팅 동의"
@@ -159,10 +127,10 @@
             android:background="@color/white">
 
             <TextView
-                style="@style/Text.MainColorFont"
+                style="@style/Text.BlackFont"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="회원탈퇴"
+                android:text="회원 탈퇴"
                 app:layout_constraintBottom_toBottomOf="@id/preferences_revoke_constraint"
                 app:layout_constraintLeft_toLeftOf="@id/preferences_revoke_constraint"
                 app:layout_constraintRight_toRightOf="@id/preferences_revoke_constraint"

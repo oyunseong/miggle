@@ -1,5 +1,6 @@
 package com.miggle.miggle.ui
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -11,7 +12,7 @@ class CommunityViewModel : ViewModel() {
 
     val singlePost: MutableLiveData<Post> = MutableLiveData()
     val postList: MutableLiveData<List<Post>> = MutableLiveData()
-    val userList: MutableLiveData<List<User>> = MutableLiveData()
+//    val userList: MutableLiveData<List<User>> = MutableLiveData()
 
     fun getPost() {
         viewModelScope.launch {
@@ -21,7 +22,12 @@ class CommunityViewModel : ViewModel() {
 
     fun getPosts() {
         viewModelScope.launch {
-            postList.value = PostNetwork.retrofit.getPosts()
+            try{
+                postList.value = PostNetwork.retrofit.getPosts()
+            }catch(e: Exception ){
+                Log.e("error", e.localizedMessage)
+            }
+
         }
     }
 
