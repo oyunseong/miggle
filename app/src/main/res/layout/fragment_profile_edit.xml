@@ -210,7 +210,7 @@
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/preferences_revoke_card"
+        android:id="@+id/preferences_ok_card"
         android:layout_width="311.3dp"
         android:layout_height="31.7dp"
         android:layout_marginTop="16.9dp"
@@ -222,7 +222,7 @@
         app:layout_constraintTop_toBottomOf="@id/preferences_new_password_confirm">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/preferences_revoke_constraint"
+            android:id="@+id/preferences_ok_constraint"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/white">
@@ -232,10 +232,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="비밀번호 수정 완료"
-                app:layout_constraintBottom_toBottomOf="@id/preferences_revoke_constraint"
-                app:layout_constraintLeft_toLeftOf="@id/preferences_revoke_constraint"
-                app:layout_constraintRight_toRightOf="@id/preferences_revoke_constraint"
-                app:layout_constraintTop_toTopOf="@id/preferences_revoke_constraint" />
+                app:layout_constraintBottom_toBottomOf="@id/preferences_ok_constraint"
+                app:layout_constraintLeft_toLeftOf="@id/preferences_ok_constraint"
+                app:layout_constraintRight_toRightOf="@id/preferences_ok_constraint"
+                app:layout_constraintTop_toTopOf="@id/preferences_ok_constraint" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

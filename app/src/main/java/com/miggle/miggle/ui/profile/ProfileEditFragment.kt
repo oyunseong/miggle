@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.miggle.miggle.MessageDialog
+import com.miggle.miggle.R
 import com.miggle.miggle.base.BaseFragment
 import com.miggle.miggle.databinding.FragmentProfileEditBinding
 
@@ -16,6 +18,13 @@ class ProfileEditFragment :BaseFragment<FragmentProfileEditBinding>(){
         binding.profileEditAppbar.appbarSearchButton.visibility = View.INVISIBLE
         binding.profileEditAppbar.appbarSettingButton.visibility = View.INVISIBLE
         binding.profileEditAppbar.appbarBellButton.visibility = View.INVISIBLE
+        binding.preferencesOkCard.setOnClickListener {
+            val dialog = MessageDialog(
+                context = activity ?: return@setOnClickListener,
+                title = R.string.comming_soon
+            )
+            dialog.show()
+        }
     }
     override fun getFragmentBinding(
         inflater: LayoutInflater,

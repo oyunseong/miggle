@@ -43,5 +43,8 @@ class HomeTabFragment : BaseFragment<FragmentHomeBinding>() {
         binding.homeAppbar.appbarMainLogo.setOnClickListener {
             view?.findNavController()?.navigate(R.id.LoginFragment)
         }
+        binding.rankingCard.setOnClickListener {
+            view?.findNavController()?.navigate(R.id.ValuationTapFragment)
+        }
     }
 }

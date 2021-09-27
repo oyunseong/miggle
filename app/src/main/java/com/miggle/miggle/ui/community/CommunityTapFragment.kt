@@ -41,7 +41,7 @@ class CommunityTapFragment : BaseFragment<FragmentCommunityBinding>() {
             view?.findNavController()?.navigate(R.id.NotionFragment)
         }
         binding.stockInfoButton.setOnClickListener{
-            communityAdapter.notifyDataSetChanged()
+            showToast("미연동")
         }
         /*binding.stockInfoButton.setOnClickListener{
             showToast("종목버튼 클릭")

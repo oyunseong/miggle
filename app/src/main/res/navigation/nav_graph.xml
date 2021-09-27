@@ -90,6 +90,13 @@
         android:label="@string/SignUpFragment"
         tools:layout="@layout/fragment_sign_up"
         />
+    <fragment
+        android:id="@+id/LikeStockListFragment"
+        android:name="com.miggle.miggle.ui.valuation.LikeStockListFragment"
+        android:label="@string/LikeStockListFragment"
+        tools:layout="@layout/fragment_like_stock"
+        />
+
 
 
 </navigation>

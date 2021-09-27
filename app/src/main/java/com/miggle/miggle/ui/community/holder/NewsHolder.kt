@@ -20,6 +20,13 @@ class NewsHolder(
             }
         }
         itemPostRecyclerBinding.itemPostTitle.text = post.title
+        itemPostRecyclerBinding.itemPostContent.text = post.body
+        itemPostRecyclerBinding.itemPostNickname.text = "유저"+post.id.toString()
+        itemPostRecyclerBinding.itemPostTime.text = "방금전"
+        itemPostRecyclerBinding.itemPostCommentCount.text = "["+post.id.toString()+"]"
+
+
+
 //        itemPostRecyclerBinding.itemPostContent.text = post.content
 //        itemPostRecyclerBinding.itemPostNickname.text = post.writerNickname
 //        itemPostRecyclerBinding.itemPostTime.text = post.createAt

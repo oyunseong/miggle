@@ -39,9 +39,11 @@
         android:layout_marginTop="5dp"
         android:ellipsize="end"
         android:maxLines="2"
+        android:textColor="@color/black"
+        android:text="ddddd"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/item_post_comment_count"
-        tools:text="@string/string_test" />
+        app:layout_constraintTop_toBottomOf="@id/item_post_title"
+        />
 
 
     <TextView
@@ -50,6 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+        android:textColor="#99333333"
         android:text="미글 운영진"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/item_post_content" />
@@ -61,6 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:textStyle="normal"
+        android:textColor="@color/main_color"
         app:layout_constraintLeft_toRightOf="@id/item_post_nickname"
         app:layout_constraintTop_toTopOf="@id/item_post_nickname"
         tools:text="3분전" />

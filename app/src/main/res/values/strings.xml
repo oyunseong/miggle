@@ -18,8 +18,10 @@
     <string name="LoginFragment">LoginFragment</string>
     <string name="SearchFragment">SearchFragment</string>
     <string name="SignUpFragment">SignUpFragment</string>
+    <string name="LikeStockListFragment">LikeStockListFragment</string>
     <string name="send_to_complete">전송 완료되었습니다.</string>
     <string name="comming_soon">미구현 기능입니다.</string>
+    <string name="sent_to_email_new_password">해당 이메일로 비밀번호가 전송되었습니다.</string>
     <string name="close">닫기</string>
     <string name="ProfileTapFragment">ProfileTapFragment</string>
     <string name="ValuationTapFragment">ValuationTapFragment</string>
