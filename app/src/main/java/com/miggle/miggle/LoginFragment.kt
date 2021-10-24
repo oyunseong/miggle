@@ -29,7 +29,7 @@ class LoginFragment :BaseFragment<FragmentLoginBinding>(){
                 context = activity ?: return@setOnClickListener,
                 title = R.string.comming_soon
             )
-            dialog.show()
+            dialog.show()//
         }
     }
 
