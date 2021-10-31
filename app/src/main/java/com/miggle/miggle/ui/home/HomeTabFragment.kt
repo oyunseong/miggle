@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavOptions
+import androidx.navigation.NavOptionsBuilder
 import androidx.navigation.findNavController
 import com.miggle.miggle.BottomSheetFragment
 import com.miggle.miggle.R
@@ -38,6 +40,7 @@ class HomeTabFragment : BaseFragment<FragmentHomeBinding>() {
             view?.findNavController()?.navigate(R.id.DailyReportFragment)
         }
         binding.guideCard.setOnClickListener {
+
             view?.findNavController()?.navigate(R.id.GuidanceFragment)
         }
         binding.homeAppbar.appbarMainLogo.setOnClickListener {
