@@ -34,7 +34,9 @@ class HomeTabFragment : BaseFragment<FragmentHomeBinding>() {
             bottomSheetFragment.show(parentFragmentManager,bottomSheetFragment.tag)
         }
         binding.homeAppbar.appbarBellButton.setOnClickListener {
-            view?.findNavController()?.navigate(R.id.NotionFragment)
+//            view?.findNavController()?.navigate(R.id.NotionFragment)
+            val bottomSheetFragment = BottomSheetFragment()
+            bottomSheetFragment.show(parentFragmentManager,bottomSheetFragment.tag)
         }
         binding.reportCard.setOnClickListener {
             view?.findNavController()?.navigate(R.id.DailyReportFragment)

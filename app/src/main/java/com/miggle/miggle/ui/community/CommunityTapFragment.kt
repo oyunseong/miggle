@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.miggle.miggle.BottomSheetFragment
 import com.miggle.miggle.R
 import com.miggle.miggle.base.BaseFragment
 import com.miggle.miggle.databinding.FragmentCommunityBinding
@@ -38,7 +39,9 @@ class CommunityTapFragment : BaseFragment<FragmentCommunityBinding>() {
             view?.findNavController()?.navigate(R.id.SearchFragment)
         }
         binding.communityAppbar.appbarBellButton.setOnClickListener {
-            view?.findNavController()?.navigate(R.id.NotionFragment)
+//            view?.findNavController()?.navigate(R.id.NotionFragment)
+            val bottomSheetFragment = BottomSheetFragment()
+            bottomSheetFragment.show(parentFragmentManager,bottomSheetFragment.tag)
         }
         binding.stockInfoButton.setOnClickListener{
             showToast("미연동")

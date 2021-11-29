@@ -3,10 +3,7 @@ package com.miggle.miggle
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import androidx.navigation.NavController
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.miggle.miggle.base.BaseActivity
 import com.miggle.miggle.databinding.ActivityMainBinding
@@ -24,10 +21,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>({ ActivityMainBinding.inf
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         initNavigation()
-        /*val navHostFragment =
-            sudpportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment
-        navController = navHostFragment.findNavController()
-        binding.mainBottomNavigation.setupWithNavController(navController)*///
+//        val navHostFragment =
+//            sudpportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment
+//        navController = navHostFragment.findNavController()
+//        binding.mainBottomNavigation.setupWithNavController(navController)
 
         postApiClient.getDart(
             crtfc_key = "b2ee4ac66008d7ebb5e87165604bae92cf554783",

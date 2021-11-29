@@ -97,6 +97,13 @@
         tools:layout="@layout/fragment_like_stock"
         />
 
+    <fragment
+        android:id="@+id/RankingFragment"
+        android:name="com.miggle.miggle.ui.valuation.RankingFragment"
+        android:label="@string/RankingFragment"
+        tools:layout="@layout/fragment_ranking"
+        />
+
 
 
 </navigation>

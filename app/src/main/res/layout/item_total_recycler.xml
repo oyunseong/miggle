@@ -26,6 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="18.8dp"
             android:layout_marginTop="15.4dp"
+            android:textSize="18sp"
             android:ellipsize="end"
             android:letterSpacing="-0.04"
             android:maxLines="2"
@@ -37,27 +38,16 @@
             android:id="@+id/post_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="5dp"
             android:letterSpacing="-0.04"
             android:textColor="#8c7e1717"
-            android:textSize="10sp"
+            android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="@id/post_title"
             app:layout_constraintTop_toBottomOf="@id/post_title"
             tools:text="게시글 제목" />
 
-        <TextView
-            android:id="@+id/post_writer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:letterSpacing="-0.04"
-            android:textColor="#8c7e1717"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            app:layout_constraintLeft_toLeftOf="@id/post_title"
-            app:layout_constraintTop_toBottomOf="@id/post_content"
-            tools:text="게시글 제목" />
+
 
         <ImageView
             android:id="@+id/post_image"

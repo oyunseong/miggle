@@ -28,9 +28,28 @@
         app:tabTextColor="@color/not_selected_color"
         app:tabIndicatorColor="@color/main_color"
         app:tabSelectedTextColor="@color/main_color"
-        app:tabMode="scrollable"
-        app:tabGravity="center"
-        app:layout_constraintTop_toBottomOf="@id/sector_select" />
+        app:layout_constraintTop_toBottomOf="@id/sector_select" >
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="종합" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PER" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PBR"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PSR"
+            />
+    </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/valueation_viewpager"

@@ -10,7 +10,7 @@ class SignUpFragment :BaseFragment<FragmentSignUpBinding>(){
         binding.signUpButton.setOnClickListener {
             val dialog = MessageDialog(
                 context = activity ?: return@setOnClickListener,
-                title = R.string.comming_soon
+                title = R.string.server_offline
             )
             dialog.show()
         }

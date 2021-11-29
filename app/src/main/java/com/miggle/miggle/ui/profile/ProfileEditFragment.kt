@@ -21,7 +21,7 @@ class ProfileEditFragment :BaseFragment<FragmentProfileEditBinding>(){
         binding.preferencesOkCard.setOnClickListener {
             val dialog = MessageDialog(
                 context = activity ?: return@setOnClickListener,
-                title = R.string.comming_soon
+                title = R.string.okComment
             )
             dialog.show()
         }
